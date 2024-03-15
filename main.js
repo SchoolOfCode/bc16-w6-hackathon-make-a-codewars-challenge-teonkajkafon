@@ -11,15 +11,4 @@
  * *The messages are always strings, you need to handle uppercase and lowercase, if the message contains no text, then the output should be "There was no text in this message", the returned decoded message and alert messages should be part of one object.
  */
 
-export function decodeMessage(message, keyWord) {
-  const lowerkey = keyWord.toLowerCase();
-  const decodedMessage =
-    message !== "" ? message : "There was no text in this message"; // Set default for empty message
-  let alertMessage = "";
-
-  if (keyWord.toLowerCase && decodedMessage.toLowerCase().includes(lowerkey)) {
-    alertMessage = `Alert! The word "${keyWord}" was found in the message.`;
-  }
-  console.log(decodedMessage, alertMessage);
-  return { decodedMessage, alertMessage }; // Return both decoded message and any alert
-}
+export function decodeMessage(message, keyWord) {}
