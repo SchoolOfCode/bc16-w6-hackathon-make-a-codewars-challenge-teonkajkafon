@@ -32,10 +32,33 @@ Read user input and display it
 **Testing:** test for inputting different messages and assert they are returned.  
 test that the output: is a string; gives a message when the output is anything other than a string.
 
+#### Planning
+
+**Plan:**
+
+- write a function that takes in a message and returns it. ✅
+- write the kata scenario.✅
+
 ### MVP 2
 
 Search for a specific word within the input message and output an alertmessage in the console to warn of that key word.  
 **Testing** test a message with the specific word to ensure the alert functionality works, insensitive to case.
+
+#### Planning
+
+** Plan: **
+
+1. write a function that takes in a message (string to decode) and a keyword (word to search for). ✅
+
+2. convert both message and keyWord to lowercase for case-insensitive searching. ✅
+
+3. check if message is empty. If so, set a default output message ("There was no text in this message"). Otherwise, it retains the original message. ✅
+
+4. search for the keyWord (lowercase) within the decodedMessage (also lowercase).✅
+
+5. if keyWord is found, return an alert message (Alert! The word "${keyWord}" was found in the message)✅
+
+6. returns an object containing both decodedMessage and alertMessage.✅
 
 ### MVP 3
 
@@ -50,5 +73,3 @@ Decoding a ROT cypher that shifts the alphabet by any given number of letters an
 ### MVP 5
 
 Decoding a ROT cypher that shifts the alphabet by any given number of letters and output an alertmessage in the console to warn of key words. Your technology has become much more advanced, you can now detect bunny movements and warn your bosses of their thoughts: whiskers twitching, thumping, alert ears, binkies.
-
-## Plan
