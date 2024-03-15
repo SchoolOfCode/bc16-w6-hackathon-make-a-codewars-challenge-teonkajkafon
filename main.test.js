@@ -7,21 +7,21 @@ test("should find a specific word (case-insensitive)", () => {
   const message = decodeMessage(employeeMessage, keyWord);
   expect(message.decodedMessage).toBe(employeeMessage);
   expect(message.alertMessage).toBe(
-    'Alert! The word "TEST" was found in the message.'
+    "Alert! The word 'TEST' was found in the message."
   );
 });
 
 test("if employeeMessage is empty, should return an empty message and no alert", () => {
   const employeeMessage = "";
-  const searchWord = "carrot";
-  const message = decodeMessage(employeeMessage, searchWord);
+  const keyWord = "carrot";
+  const message = decodeMessage(employeeMessage, keyWord);
   expect(message.decodedMessage).toBe("There was no text in this message");
   expect(message.alertMessage).toBe("");
 });
 
 test("an object should be returned", () => {
   const employeeMessage = "This is a message.";
-  const searchWord = "test";
-  const message = decodeMessage(employeeMessage, searchWord);
+  const keyWord = "test";
+  const message = decodeMessage(employeeMessage, keyWord);
   expect(typeof message).toBe("object"); // Check if it's an object
 });
