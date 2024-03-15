@@ -2,7 +2,7 @@ Put your plan, story, and any supporting material here, you could use the help o
 
 # Project Title
 
-A brief description of what this project does and who it's for
+Carrot, a seemingly innocent vegetable company, is suspected of using trained rabbits for industrial sabotage. As a tech-savvy intern at a rival company (Spring Greens Ltd), you have stumbled upon a series of encrypted messages hidden within Carrot's social media posts. These messages, believed to be in a simple ROT cipher, could expose their secret plans to world domination. Your mission is to crack the code and expose Carrot's evil plans!
 
 ## A team-based approach to development
 
@@ -25,5 +25,30 @@ As a team we brainstormed various ideas and discussed each one to guage how feas
 ![Alt text](.\res\jamboard-screenshot.png?raw=true "team brainstorming on jamboard")
 
 ## MVPs
+
+### MVP 1
+
+Read user input and display it
+**Testing:** test for inputting different messages and assert they are returned.  
+test that the output: is a string; gives a message when the output is anything other than a string.
+
+### MVP 2
+
+Search for a specific word within the input message and output an alertmessage in the console to warn of that key word.  
+**Testing** test a message with the specific word to ensure the alert functionality works, insensitive to case.
+
+### MVP 3
+
+Decoding a ROT cypher that shifts the alphabet by one letter and output an alertmessage in the console to warn of key words.
+**Testing** test input messages are correctly decoded to confirm that rotation works as expected.
+
+### MVP 4
+
+Decoding a ROT cypher that shifts the alphabet by any given number of letters and output an alertmessage in the console to warn of key words.
+**Testing** test input messages with different shift values are correctly decoded to confirm that rotation works as expected.
+
+### MVP 5
+
+Decoding a ROT cypher that shifts the alphabet by any given number of letters and output an alertmessage in the console to warn of key words. Your technology has become much more advanced, you can now detect bunny movements and warn your bosses of their thoughts: whiskers twitching, thumping, alert ears, binkies.
 
 ## Plan
